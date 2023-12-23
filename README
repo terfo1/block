@@ -1,0 +1,54 @@
+Mood Contract DApp
+A simple Decentralized Application (DApp) that interacts with a smart contract to set and retrieve mood information on the Ethereum blockchain.
+
+Smart Contract Details
+Contract Address: 0x8a64Ce762C6A518Eb63F621D4Fccba584D4014Db
+Contract ABI:
+json
+[
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_mood",
+                "type": "string"
+            }
+        ],
+        "name": "setMood",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getMood",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
+Usage
+Clone the repository:
+
+Copy code
+git clone https://github.com/your-username/your-repo.git
+Open the index.html file in your preferred web browser.
+
+Ensure you have a compatible Ethereum wallet (like MetaMask) installed and configured.
+
+The application will prompt you to connect your wallet. Once connected, it will initialize the contract and signer.
+
+Use the provided input field to set your mood and click the "Set Mood" button.
+
+To retrieve your mood, click the "Get Mood" button.
+
+Dependencies
+Ethers.js
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
